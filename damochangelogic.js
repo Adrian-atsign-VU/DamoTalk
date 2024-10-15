@@ -1,0 +1,1 @@
+const img=document.getElementById("image"),originalSrc="damo/damo-shut.webp",swappedSrc="damo/damo-open.webp";let isSpacePressed=!1;document.addEventListener("keydown",e=>{"Space"!==e.code||isSpacePressed||(isSpacePressed=!0,img.src=swappedSrc)}),document.addEventListener("keyup",e=>{"Space"===e.code&&isSpacePressed&&(isSpacePressed=!1,img.src=originalSrc)});
